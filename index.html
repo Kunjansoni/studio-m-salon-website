@@ -424,7 +424,7 @@
         <a class="btn btn-gold" href="#book" data-close-drawer><i data-lucide="calendar-check"></i>Book Now</a>
         <a class="btn btn-wa" href="https://wa.me/918488884403?text=Hello%20Studio%20M%20Salon!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener"><i data-lucide="message-circle"></i>WhatsApp Us</a>
         <a class="btn btn-ghost" href="tel:+918488884403"><i data-lucide="phone"></i>Call +91 84888 84403</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Studio%20M%20Salon%2C%20Shop%20No.%201%2C%20Sukh%20Shine%20Complex%2C%20Opp.%20Galaxy%20Bazaar%2C%20near%20Sunrise%20Park%20Road%2C%20Vastrapur%2C%20Ahmedabad" target="_blank" rel="noopener"><i data-lucide="navigation"></i>Get Directions</a>
+        <a class="btn btn-ghost" data-map-link href="https://www.google.com/maps/dir/?api=1&destination=Studio%20M%20Salon%2C%20Shop%20No.%201%2C%20Sukh%20Shine%20Complex%2C%20Opp.%20Galaxy%20Bazaar%2C%20near%20Sunrise%20Park%20Road%2C%20Vastrapur%2C%20Ahmedabad" target="_blank" rel="noopener"><i data-lucide="navigation"></i>Get Directions</a>
         <p class="drawer-meta">Open all 7 days · 11 AM – 8 PM<br />Vastrapur, Ahmedabad</p>
       </div>
     </aside>
@@ -579,7 +579,7 @@
               <span class="stars" aria-hidden="true"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span>
               <p>Studio M Salon holds a <strong>4.6-star rating from 83 reviews</strong> on Google — for cuts, colour and the kind of service that brings people back with their family and friends.</p>
             </div>
-            <a class="btn btn-gold" href="https://maps.app.goo.gl/8MpFxSMaWvBnnSLp6?g_st=ic" target="_blank" rel="noopener"><i data-lucide="star"></i>Read reviews on Google</a>
+            <a class="btn btn-gold" data-map-link href="https://www.google.com/maps/?q=Studio+M+Salon%2C+Sukh+Shine+Complex%2C+Opp.+Galaxy+Bazaar%2C+Vastrapur%2C+Ahmedabad&ftid=0x395e84b04b132a8f:0x87197196215278fa" target="_blank" rel="noopener"><i data-lucide="star"></i>Read reviews on Google</a>
           </div>
         </div>
       </section>
@@ -603,9 +603,9 @@
                   <div class="k">Address</div>
                   <div class="val">Shop No. 1, Sukh Shine Complex, Opp. Galaxy Bazaar, near Sunrise Park Road, Vastrapur, Ahmedabad</div>
                   <div class="dir-row">
-                    <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&destination=Studio%20M%20Salon%2C%20Shop%20No.%201%2C%20Sukh%20Shine%20Complex%2C%20Opp.%20Galaxy%20Bazaar%2C%20near%20Sunrise%20Park%20Road%2C%20Vastrapur%2C%20Ahmedabad" target="_blank" rel="noopener"><i data-lucide="navigation"></i>Google Maps</a>
-                    <a class="btn btn-ghost" href="https://maps.apple.com/?daddr=Studio%20M%20Salon%2C%20Shop%20No.%201%2C%20Sukh%20Shine%20Complex%2C%20Opp.%20Galaxy%20Bazaar%2C%20near%20Sunrise%20Park%20Road%2C%20Vastrapur%2C%20Ahmedabad" target="_blank" rel="noopener"><i data-lucide="compass"></i>Apple Maps</a>
-                    <a class="btn btn-ghost" href="https://maps.app.goo.gl/8MpFxSMaWvBnnSLp6?g_st=ic" target="_blank" rel="noopener"><i data-lucide="map-pin"></i>Our Google Listing</a>
+                    <a class="btn btn-gold" data-map-link href="https://www.google.com/maps/dir/?api=1&destination=Studio%20M%20Salon%2C%20Shop%20No.%201%2C%20Sukh%20Shine%20Complex%2C%20Opp.%20Galaxy%20Bazaar%2C%20near%20Sunrise%20Park%20Road%2C%20Vastrapur%2C%20Ahmedabad" target="_blank" rel="noopener"><i data-lucide="navigation"></i>Google Maps</a>
+                    <a class="btn btn-ghost" data-map-link href="https://maps.apple.com/?daddr=Studio%20M%20Salon%2C%20Shop%20No.%201%2C%20Sukh%20Shine%20Complex%2C%20Opp.%20Galaxy%20Bazaar%2C%20near%20Sunrise%20Park%20Road%2C%20Vastrapur%2C%20Ahmedabad" target="_blank" rel="noopener"><i data-lucide="compass"></i>Apple Maps</a>
+                    <a class="btn btn-ghost" data-map-link href="https://www.google.com/maps/?q=Studio+M+Salon%2C+Sukh+Shine+Complex%2C+Opp.+Galaxy+Bazaar%2C+Vastrapur%2C+Ahmedabad&ftid=0x395e84b04b132a8f:0x87197196215278fa" target="_blank" rel="noopener"><i data-lucide="map-pin"></i>Our Google Listing</a>
                   </div>
                 </div>
               </div>
@@ -673,7 +673,7 @@
     <script>
       "use strict";
       var WA_NUM = "918488884403";
-      var MAPS_URL = "https://maps.app.goo.gl/8MpFxSMaWvBnnSLp6?g_st=ic";
+      var MAPS_URL = "https://www.google.com/maps/?q=Studio+M+Salon%2C+Sukh+Shine+Complex%2C+Opp.+Galaxy+Bazaar%2C+Vastrapur%2C+Ahmedabad&ftid=0x395e84b04b132a8f:0x87197196215278fa";
       var OPEN_MIN = 11 * 60, CLOSE_MIN = 20 * 60;
 
       var CATS = [
@@ -1013,6 +1013,21 @@
         document.addEventListener("keydown", function (e) { if (e.key === "Escape") setDrawer(false); });
       })();
 
+      /* ---------- map links: open reliably from any viewer ----------
+         Some in-app browsers (WhatsApp, social apps, embedded viewers) silently
+         swallow plain target="_blank" taps. Open the map in a new tab via script,
+         and if that is blocked, navigate this tab instead — the tap always works. */
+      document.addEventListener("click", function (e) {
+        var a = e.target && e.target.closest ? e.target.closest("a[data-map-link]") : null;
+        if (!a) return;
+        var url = a.getAttribute("href");
+        if (!url) return;
+        e.preventDefault();
+        var w = null;
+        try { w = window.open(url, "_blank", "noopener"); } catch (err) { w = null; }
+        if (!w) { window.location.href = url; }
+      });
+
       /* ---------- salon map ---------- */
       (function () {
         var el = document.getElementById("salonMap");
@@ -1027,7 +1042,12 @@
           el.removeAttribute("role");
           el.innerHTML = '<div class="map-fallback"><div class="mf-t">Find us in Vastrapur</div>' +
             "<p>Shop No. 1, Sukh Shine Complex, Opp. Galaxy Bazaar, near Sunrise Park Road, Vastrapur, Ahmedabad</p>" +
-            "<p>Open all 7 days · 11 AM – 8 PM · +91 84888 84403</p></div>";
+            "<p>Open all 7 days · 11 AM – 8 PM · +91 84888 84403</p>" +
+            '<div class="dir-row">' +
+            '<a class="btn btn-gold" data-map-link href="https://www.google.com/maps/dir/?api=1&destination=Studio%20M%20Salon%2C%20Shop%20No.%201%2C%20Sukh%20Shine%20Complex%2C%20Opp.%20Galaxy%20Bazaar%2C%20near%20Sunrise%20Park%20Road%2C%20Vastrapur%2C%20Ahmedabad" target="_blank" rel="noopener"><i data-lucide="navigation"></i>Google Maps</a>' +
+            '<a class="btn btn-ghost" data-map-link href="https://maps.apple.com/?daddr=Studio%20M%20Salon%2C%20Shop%20No.%201%2C%20Sukh%20Shine%20Complex%2C%20Opp.%20Galaxy%20Bazaar%2C%20near%20Sunrise%20Park%20Road%2C%20Vastrapur%2C%20Ahmedabad" target="_blank" rel="noopener"><i data-lucide="compass"></i>Apple Maps</a>' +
+            "</div></div>";
+          if (window.lucide) lucide.createIcons();
         }
         try {
           if (window.MapHelpers && typeof MapHelpers.mountMap === "function") {
